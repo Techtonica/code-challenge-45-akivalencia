@@ -13,8 +13,6 @@
 // Bonus Challenge:  Try to do this _without_ initializing a new array.
 
 //max/min method 
-
-function max_end3(int_array){
   // Add functionality here!
   // for (let i=0; i<int_array.length; i++){
   //   var largest= int_array[0];
@@ -23,12 +21,29 @@ function max_end3(int_array){
   //   } else largest=largest;
   // }
   // return largest;
-  let largest= Math.max(int_array[0], int_array[2]);
-  for (let i=0; i<int_array[2]; i++){
+
+function max_end3(int_array){
+  //max method array
+  let largest= Math.max(int_array[0], int_array[int_array.length-1]);
+  for (let i=0; i<int_array.length; i++){
+    //set all items equal to largest #
     int_array[i]= largest;
   }
   return int_array;
 }
+
+max_end3([1,2,3]);
+max_end3([100,4505,8]);
+
+
+
+
+
+
+
+
+
+
 
 max_end3();
 
