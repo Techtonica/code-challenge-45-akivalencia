@@ -36,15 +36,4 @@ max_end3([1,2,3]);
 max_end3([100,4505,8]);
 
 
-
-
-
-
-
-
-
-
-
-max_end3();
-
 module.exports = max_end3;
